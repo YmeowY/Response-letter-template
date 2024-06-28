@@ -1,0 +1,46 @@
+\documentclass[12pt,american]{article}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+\usepackage[hidelinks]{hyperref}
+\usepackage{babel}
+\usepackage[babel]{microtype}
+\usepackage[babel]{csquotes}
+\usepackage[journal={Science}, % REPLACE WITH JOURNAL
+			manuscript={manuscript ID}, % REPLACE WITH MANUSCRIPT ID
+			editor={editor name}]{reviewresponse} % REPLACE WITH EDITOR
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[a4paper,total={160mm,245mm},left=25mm,top=25mm]{geometry}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{.5pt}
+\usepackage[shortlabels]{enumitem}
+\newlist{detail}{itemize}{3}
+\setlist[detail, 1]{label=\textbullet,leftmargin=21pt,nosep}
+\usepackage[backend=biber,style=ieee,dashed=false,url=false,isbn=false,defernumbers=true,refsection=section]{biblatex}
+
+% \usepackage[UTF8]{ctex}
+
+\bibliography{literature.bib}
+
+
+\title{The shining title of my awesome research} % REPLACE WITH TITLE
+\author{Authors} % REPLACE WITH AUTHORS
+
+
+\begin{document}
+\maketitle
+
+% Cover Letter
+\input{cover_letter.tex}
+\setcounter{page}{0}
+\pagestyle{fancy}
+\fancyfoot[R]{\thepage\ / \pageref{LastPage}}
+\fancyfoot[L]{Response Letter for \manuscript}
+\fancyfoot[C]{\ }
+\input{Reviewers/Meta.tex}
+\input{Reviewers/R1.tex}
+\input{Reviewers/R2.tex}
+\input{Reviewers/R3.tex}
+\input{Reviewers/R4.tex}
+
+\end{document}

@@ -1,0 +1,39 @@
+% Reviewer 6
+\reviewer
+
+The introduction goes here ...
+
+\begin{generalcomment}
+	This is a general comment.
+\end{generalcomment}
+
+\begin{revcomment}\label{c1}
+	How to generate a list?
+\end{revcomment}
+
+\begin{revresponse}\label{r1}
+	This is how you do it.
+	\begin{enumerate}
+		\item item 1
+		\item item 2
+	\end{enumerate}
+
+\end{revresponse}
+
+\begin{revcomment}\label{c2}
+	\emph{Emphasis the changes.}
+\end{revcomment}
+
+\begin{revresponse}
+	Like this:
+
+	\begin{changes}
+		(\emph{Page 2}) Anyway, this is how we did it \cite{2013Management}. ... 
+	\end{changes}
+
+	Refer to response \ref{r1}.
+
+	\printpartbibliography{2013Management}
+
+\end{revresponse}
+

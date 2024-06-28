@@ -1,0 +1,45 @@
+% Reviewer 1
+\reviewer
+
+The introduction goes here ...
+
+\begin{generalcomment}
+	This is a general comment.
+\end{generalcomment}
+
+\begin{revcomment}
+	How to generate a list?
+\end{revcomment}
+
+\begin{revresponse}
+	This is how you do it.
+	\begin{enumerate}
+		\item item 1
+		\item item 2
+	\end{enumerate}
+
+\end{revresponse}
+
+\begin{revcomment}
+	\emph{Emphasis the changes.}
+\end{revcomment}
+
+\begin{revresponse}
+	Like this \ref{fig}:
+
+	\begin{changes}
+		(\emph{Page 2}) Anyway, this is how we did it \cite{2013Management, Uehata1997Calcium}. ... 
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.4]{figures/productads.pdf}
+			\caption{Caption of figure \cite{2013Management}.}
+			\label{fig}
+		\end{figure}
+	\end{changes}
+
+
+	\printpartbibliography{2013Management, Uehata1997Calcium}
+
+\end{revresponse}
+
